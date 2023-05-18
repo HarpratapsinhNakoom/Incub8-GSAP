@@ -1,0 +1,129 @@
+/* .features-section__container {
+    width: 100%;
+    height: 100%;
+}
+
+.features__horizontal {
+    overflow-x: hidden;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-wrap: nowrap; */
+    /* transform: translate(-300vw); */
+/* } */
+
+/* .feature__item {
+    border: 10px solid aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    color: aliceblue;
+} */
+
+
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;400;700&display=swap');
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Poppins';
+}
+.wrapper {
+    overflow-x: hidden;
+    position: relative;
+}
+* {
+    box-sizing: border-box;
+}
+
+svg {
+    position: absolute;
+    top: 12em;
+    left: 10vw;
+    width: 50vw;
+
+
+}
+
+svg > .mask {
+    width: 0;
+}
+
+.container {
+    display: flex;
+    width: 300vw;
+} */
+
+.features-section__container {
+    max-width: 800px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    margin: 100px auto;
+    margin-top: 200px;
+}
+
+.features-section__title {
+    text-align: center;
+    margin: 100px 0;
+    color: aliceblue;
+    font-size: 55px;
+}
+
+.feature__items {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    overflow-x: hidden;   
+}
+
+.feature__items::-webkit-scrollbar,
+.feature__item::-webkit-scrollbar {
+    display: none;
+}
+
+.feature__items, .feature__item {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.feature__item {
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    gap: 25px;
+}
+
+.feature__item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.item-image {
+    flex: 1;
+    align-self: flex-start;
+    object-fit: contain;
+}
+
+.item-image > img {
+    width: 100%;
+}
+
+.item-text {
+    flex: 1;
+    align-self: center;
+}
+
+.item-title {
+    font-size: 30px;
+    color: red;
+}
+
+.item-desc {
+    font-size: 14px;
+    color: aliceblue;
+}
