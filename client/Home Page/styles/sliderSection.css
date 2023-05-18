@@ -13,13 +13,13 @@
 }
 
 .word {
-    color: aliceblue;
     letter-spacing: 12px;
     font-weight:lighter;
     display: flex;
     gap: 15px;
     flex-wrap: nowrap;
     width: fit-content;
+    color: wheat;
     margin: 20px 0;
 }
 
@@ -28,10 +28,12 @@
 }
 .wone {
     font-size: 40px;
+    /* color: yellow; */
     align-self: start;
 }
 
 .wtwo {
+    /* color: ; */
     font-size: 50px;
     align-self: end;
 }
