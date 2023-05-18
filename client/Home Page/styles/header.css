@@ -15,7 +15,17 @@ body {
     font-family: poppins;
     background-image: url("../assets/home-gradient-bg.avif");
     background-repeat: repeat-y;
-    background-size: cover;
+    background-size: cover;    
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
 .main__container {
