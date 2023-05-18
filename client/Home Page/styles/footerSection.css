@@ -37,6 +37,7 @@
 
 #footer-links > span {
     width: fit-content;
+    transition: all 0.4s ease-out;
 }
 #footer-links > span > a {
     position: relative;
@@ -45,7 +46,6 @@
     font-weight: 800;
     text-decoration: none;
     color: #ffffff;
-    transition: all 0.4s ease-out;
 }
 
 .footer-link-item::after {
@@ -58,7 +58,7 @@
     /* background-color: #0077b5; */
     transition: all 0.4s ease-out;
 }
-.footer-link-item:hover {
+#footer-links > span:hover {
     transform: translate(20px);
 }
 
