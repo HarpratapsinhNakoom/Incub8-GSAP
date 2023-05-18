@@ -31,6 +31,7 @@ body {
 .main__container {
     position: relative;
     padding: 50px 25px;
+    overflow: hidden;
 }
 .line-one {
     z-index: 0;

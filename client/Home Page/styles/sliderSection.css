@@ -1,0 +1,37 @@
+.slider__container {
+    /* border: 5px solid yellow; */
+    margin: 50px 0;
+    overflow-x: hidden;
+}
+
+.words {
+    overflow-x: hidden;
+    /* border: 5px solid aliceblue; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.word {
+    color: aliceblue;
+    letter-spacing: 12px;
+    font-weight:lighter;
+    display: flex;
+    gap: 15px;
+    flex-wrap: nowrap;
+    width: fit-content;
+    margin: 20px 0;
+}
+
+.word > span {
+    word-break: normal;
+}
+.wone {
+    font-size: 40px;
+    align-self: start;
+}
+
+.wtwo {
+    font-size: 50px;
+    align-self: end;
+}

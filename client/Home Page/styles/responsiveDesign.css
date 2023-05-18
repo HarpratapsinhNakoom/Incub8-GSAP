@@ -51,6 +51,13 @@
 }
 
 @media screen and (width <= 525px) {
+    .wone {
+        font-size: 25px;
+    }
+    
+    .wtwo {
+        font-size: 35px;
+    }
     .title > p {
         font-size: 35px;
     }
