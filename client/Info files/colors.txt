@@ -1,0 +1,10 @@
+COLORS OF LOGO
+    Pink - #E6007E
+    Orange - #EA5624
+    Dark blue - #322984
+    Yellow - #FFED00
+    Light blue - #009FE3
+    Green - #7FA84E
+
+Gradient code for backgrounds
+    

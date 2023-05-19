@@ -1,7 +1,7 @@
 .about-section__container {
     z-index: 1;
     position: relative;
-    color: aliceblue;
+    color: black;
     margin: 100px 0;
     width: 100%;
     display: flex;
@@ -49,7 +49,7 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    background-color: aliceblue;
+    background-color: #696969;
 }
 
 .about__img {

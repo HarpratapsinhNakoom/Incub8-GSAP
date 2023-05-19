@@ -13,9 +13,11 @@ body {
     height: 100vh;
     overflow-x: hidden;
     font-family: poppins;
-    background-image: url("../assets/home-gradient-bg.avif");
+    /* background-image: url("../assets/home-gradient-bg.avif");
     background-repeat: repeat-y;
-    background-size: cover;    
+    background-size: cover;     */
+    background-color: rgb(246, 244, 240);
+    /* background-color: white; */
 }
 
 body::-webkit-scrollbar {
@@ -80,7 +82,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: aliceblue;
+    color : black;
     text-decoration: none;
     position: relative;
     text-transform: uppercase;
@@ -106,7 +108,7 @@ nav ul li a:hover::after {
 .logo {
     padding-left: 40px;
     flex: 1;
-    color: aliceblue;
+    color : black;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -149,7 +151,7 @@ nav ul li a:hover::after {
 .title > p {
     font-size: 100px;
     font-weight: 700;
-    color: aliceblue;
+    color : black;
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
@@ -194,7 +196,7 @@ nav ul li a:hover::after {
 }
 
 .media ul li {
-    color: aliceblue;
+    color : black;
     cursor: pointer;
     font-size: 18px;
     margin: 24px 0;

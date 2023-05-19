@@ -12,7 +12,7 @@
     margin: 0 20px;
     padding: 0 60px;
     padding-top: 80px;
-    /* padding-bottom: 50px; */
+    padding-bottom: 50px;
     display: flex;
     align-items: flex-start;
     border-bottom: 2px solid white;
@@ -120,6 +120,7 @@
 }
 
 #footer-brand {
+    flex: 1.5;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -129,7 +130,8 @@
 }
 
 #footer-logo {
-    width: 150px;
+    flex: 1;
+    /* width: 150px; */
     object-fit: contain;
 }
 
@@ -137,8 +139,27 @@
     width: 100%;
 }
 
+#footer-name {
+    flex: 2;
+    font-weight: 300;
+}
+
+/* #footer-name:hover {
+    text-decoration: underline;
+    cursor: pointer;
+} */
+
 #footer-credits {
+    flex: 1;
     font-size: 14px;
+}
+
+#policy-links > span > a {
+    color: aliceblue;
+    text-decoration: none;
+}
+#policy-links > span > a:hover {
+    text-decoration: underline;
 }
 
 #rights{
