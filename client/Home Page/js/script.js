@@ -24,13 +24,13 @@ TweenMax.staggerFrom("nav ul li", 1, {
 //     ease: Expo.easeInOut
 // })
 
-TweenMax.from(".title", 1, {
-    opacity: 0,
-    delay: 1,
-    // y: "100vh",
-    x:"100vw",
-    ease: Expo.easeInOut
-})
+// TweenMax.from(".title", 1, {
+//     opacity: 0,
+//     delay: 1,
+//     // y: "100vh",
+//     x:"100vw",
+//     ease: Expo.easeInOut
+// })
 
 // TweenMax.from(".btn", 1, {
 //     opacity: 0,
@@ -54,7 +54,7 @@ TweenMax.from(".title", 1, {
 
 TweenMax.from(".img", 1, {
     opacity: 0,
-    delay: 2,
+    delay: 1.4,
     y: "-100vh",
     ease: Expo.easeInOut
 })

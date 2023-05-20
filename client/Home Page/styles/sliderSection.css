@@ -1,39 +1,45 @@
 .slider__container {
     /* border: 5px solid yellow; */
-    margin: 50px 0;
+    margin-bottom: 50px;
+    /* margin-top: 20px; */
     overflow-x: hidden;
 }
 
 .words {
+    padding: 5px 0;
+    background-color: black;
     overflow-x: hidden;
     /* border: 5px solid aliceblue; */
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 65px;
+    position: relative;
+    width: 100vw;
+    /* height: 20rem; */
+    overflow-x: hidden;
+    /* flex-direction: column; */
 }
 
 .word {
-    letter-spacing: 12px;
-    font-weight:lighter;
-    display: flex;
-    gap: 15px;
-    flex-wrap: nowrap;
+    margin: 10px 0;
+    font-size: 14px;
+    /* font-weight:lighter; */
+    /* color: rgb(59, 58, 58); */
+    color: white;
     width: fit-content;
-    color: rgb(59, 58, 58);
-    margin: 20px 0;
+    height: inherit;
+    /* position: absolute; */
+    /* left: 0%;
+    top: 0%; */
+    animation: primary 12s linear infinite;
 }
 
-.word > span {
-    word-break: normal;
-}
-.wone {
-    font-size: 40px;
-    /* color: yellow; */
-    align-self: start;
-}
-
-.wtwo {
-    /* color: ; */
-    font-size: 50px;
-    align-self: end;
+@keyframes primary {
+    from {
+        translate: 0;
+    }
+    to {
+        translate: -100vw;
+    }
 }

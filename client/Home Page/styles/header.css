@@ -5,6 +5,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 html,
 body {
     margin: 0;
@@ -32,8 +35,10 @@ body {
 
 .main__container {
     position: relative;
-    padding: 50px 25px;
+    /* padding: 50px 25px; */
+    /* padding: 55px 0; */
     overflow: hidden;
+    background-color: #000;
 }
 .line-one {
     z-index: 0;
@@ -64,6 +69,7 @@ nav {
     align-items: center;
     flex-wrap: wrap;
     padding: 5px 0;
+    background-color: black;
     backdrop-filter: blur(6px);
 }
 
@@ -82,10 +88,10 @@ nav ul li {
 }
 
 nav ul li a {
-    color : black;
+    color : white;
     text-decoration: none;
     position: relative;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-size: 14px;
 }
 
@@ -106,11 +112,21 @@ nav ul li a:hover::after {
 }
 
 .logo {
-    padding-left: 40px;
+    /* padding-left: 70px; */
     flex: 1;
+    /* max-width: 100px; */
     color : black;
     font-weight: bold;
-    text-transform: uppercase;
+}
+
+.logo-container {
+    width: 100%;
+    object-fit: contain;
+    padding-left: 100px;
+}
+
+.logo-container > img {
+    max-width: 150px;
 }
 
 /* .search {
@@ -124,23 +140,27 @@ nav ul li a:hover::after {
 } */
 
 .main__info {
-    width: 100%;
+    width: 100vw;
+    height: calc(100vh - 50px);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    background-image: url('../../Common components/assets/homePage-bg-video.mp4');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.img {
+/* .video {
     flex: 1;
-    object-fit: contain;
+    object-fit: cover;
 }
 
-.img img {
-    position: relative;
+video {
     width: 100%;
-    /* -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter: drop-shadow(5px 5px 5px #222); */
-}
+    height: 100%;
+    filter: brightness(70%);
+ } */
 
 .title {
     flex: 1;

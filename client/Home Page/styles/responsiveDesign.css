@@ -10,8 +10,11 @@
     .about__title {
         top: -40px;
     }
-}
 
+    nav ul li {
+        margin: 10px;
+    }
+}
 @media screen and (width <= 900px) {
     .about__title {
         top: 0;
@@ -23,6 +26,19 @@
         min-width: fit-content;
         margin-left: 45px;
         margin-right: 45px;
+    }
+
+    .feature__items {
+        animation: feature_slider 32s linear infinite;
+    }
+
+    @keyframes feature_slider {
+        from {
+            translate: 0;
+        }
+        to {
+            translate: -85%;
+        }
     }
 }
 
@@ -73,6 +89,10 @@
 
     .item-desc {
         font-size: 13px;
+    }
+
+    .feature__items {
+        animation: feature_slider 43s linear infinite;
     }
 }
 
@@ -169,6 +189,14 @@
         margin-right: 0;
     }
 
+    #footer-top {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #social-media-container {
+        gap: 15px;
+    }
     #footer-name {
         width: 100%;
         text-align: left;

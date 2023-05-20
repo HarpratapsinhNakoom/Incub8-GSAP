@@ -22,35 +22,71 @@
         integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
     <!-- STYLES -->
+    <link rel="stylesheet" href="./styles/sidebarSection.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/sliderSection.css">
     <link rel="stylesheet" href="./styles/identitySection.css">
     <link rel="stylesheet" href="./styles/featureSection.css">
     <link rel="stylesheet" href="./styles/footerSection.css">
     <link rel="stylesheet" href="./styles/responsiveDesign.css">
-
 </head>
 
 <body>
+    <!-- SIDEBAR -->
+    <nav id="navbar">
+        <div id="navbar-logo">
+            <a href="../Home Page/index.html">
+                <img src="../Common components/assets/logo-white.png" alt="">
+            </a>
+        </div>
+
+        <div id="navbar-toggle-container">
+            <div id="navbar-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div id="sidebar-links">
+            <a href="../Home Page/index.html" class="sidebar-link-item">HOME</a>
+            <a href="" class="sidebar-link-item">INCUBATION</a>
+            <a href="" class="sidebar-link-item">ACCELERATION</a>
+            <a href="" class="sidebar-link-item">INVESTMENT</a>
+            <a href="" class="sidebar-link-item">COWORKING</a>
+            <a href="" class="sidebar-link-item">COMMUNITY</a>
+            <a href="../Events page/events.html" class="sidebar-link-item">PROGRAMS</a>
+            <a href="" class="sidebar-link-item">REACHOUT</a>
+        </div>
+    </nav>
+
+    
     <!-- NAVBAR -->
     <nav>
         <!-- <div class="logo">
-            <span>Incub8</span>
+            <div class="logo-container">
+                <img src="../Common components/assets/logo.png" alt="">
+            </div>
         </div> -->
-        
+
         <!-- NAVBAR LINKS -->
         <ul>
             <li><a href="#incubation">incubation</a></li>
+            <li><a href="#incubation">acceleration</a></li>
+            <li><a href="#incubation">investment</a></li>
+            <li><a href="#incubation">coworking</a></li>
+            <li><a href="#incubation">community</a></li>
             <li><a href="../Events page/events.html">programs</a></li>
             <li><a href="">reachout</a></li>
             <!-- <li><a href="">Contact</a></li> -->
         </ul>
 
         <!-- SIDEBAR TOGGLE BUTTON -->
-        
+
         <!-- <div class="menu">
             <i class="fa fa-bars"></i>
         </div> -->
@@ -64,18 +100,22 @@
             <div class="line-one"></div>
             <div class="line-two"></div>
         </div> -->
-        
+
         <!-- HEADER IMAGE AND TITLE -->
         <div class="main__info">
-            <div class="img">
-                <img src="./assets/incub8-logo.png" alt="">
+            <div class="video">
+                <!-- <img src="../Common components/assets/incub8-main.png" alt=""> -->
+                <video autoplay loop muted>
+                    <source src="../Common components/assets/homePage-bg-video.mp4" type="video/mp4">
+                </video>
             </div>
-
-            <div class="title">
+            
+            
+            <!-- <div class="title">
                 <p>Innovation</p>
                 <p>Incubation</p>
                 <p>Investment</p>
-            </div>
+            </div> -->
         </div>
         <!-- <div class="btn">
             <a href="">Order Now</a>
@@ -90,40 +130,36 @@
                 <li><i class="fa fa-twitter"></i></li>
             </ul>
         </div> -->
-        
+
     </div>
-    
+
     <!-- SLIDER SECTION -->
     <div class="slider__container">
         <div class="words">
-            <div class="word wone">
-                <span>COLLABORATE</span>
-                <i class="fa fa-solid fa-handshake"></i>
-                <span>COLLABORATE</span>
-                <i class="fa fa-solid fa-handshake"></i>
-                <span>COLLABORATE</span>
-                <i class="fa fa-solid fa-handshake"></i>
-                <span>COLLABORATE</span>
-                <i class="fa fa-solid fa-handshake"></i>
-                <span>COLLABORATE</span>
-                <i class="fa fa-solid fa-handshake"></i>
-            </div>
-            <div class="word wtwo">
-                <span>CO.RISE</span>
-                <i class="fa fa-solid fa-arrow-trend-up"></i>
-                <span>CO.RISE</span>
-                <i class="fa fa-solid fa-arrow-trend-up"></i>
-                <span>CO.RISE</span>
-                <i class="fa fa-solid fa-arrow-trend-up"></i>
-                <span>CO.RISE</span>
-                <i class="fa fa-solid fa-arrow-trend-up"></i>
-                <span>CO.RISE</span>
-                <i class="fa fa-solid fa-arrow-trend-up"></i>
-                <span>CO.RISE</span>
-                <i class="fa fa-solid fa-arrow-trend-up"></i>
-                <span>CO.RISE</span>
-                <i class="fa fa-solid fa-arrow-trend-up"></i>
-            </div>
+            <div class="word word1">Innovation</div>
+            <div class="word word2">Incubation</div>
+            <div class="word word3">Acceleration</div>
+            <div class="word word4">Investment</div>
+            <div class="word word5">Coworking</div>
+            <div class="word word6">Mentorship</div>
+            <div class="word word7">Community</div>
+            <div class="word word8">Programs</div>
+            <div class="word word1">Innovation</div>
+            <div class="word word2">Incubation</div>
+            <div class="word word3">Acceleration</div>
+            <div class="word word4">Investment</div>
+            <div class="word word5">Coworking</div>
+            <div class="word word6">Mentorship</div>
+            <div class="word word7">Community</div>
+            <div class="word word8">Programs</div>
+            <div class="word word1">Innovation</div>
+            <div class="word word2">Incubation</div>
+            <div class="word word3">Acceleration</div>
+            <div class="word word4">Investment</div>
+            <div class="word word5">Coworking</div>
+            <div class="word word6">Mentorship</div>
+            <div class="word word7">Community</div>
+            <div class="word word8">Programs</div>
         </div>
     </div>
 
@@ -131,22 +167,13 @@
     <!-- ABOUT SECTION -->
     <div class="about-section__container" id="incubation">
         <!-- TITLE -->
-        <div class="about__title">
-            <span id="title">ABOUT US</span>
-            <div class="title__border"></div>
-        </div>
         <div class="about-info__container">
-            <div class="about__img">
-                
-                <img src="./assets/identity-img.png" alt="">
-            </div>
             <div class="about__desc">
                 Incub8 is a section-8, non-profit organization with an aim to work in line with the national priorities
                 and goals and its focus would be on nurturing ideas and innovations into successful startups to build an
                 innovation driven entrepreneurial ecosystem with an objective of socio-economic development through
                 wealth and job creation.
-                <br><br>
-                With your guidance and support, we intend to ensure Incub8 becomes a state-of-the-art world class
+                A state-of-the-art world class
                 incubation facility with suitable physical infrastructure in terms of capital equipment and operating
                 facilities, coupled with the availability of sectoral experts for mentoring, business planning support,
                 access to seed capital, industry partners, trainings and other relevant components to become scalable
@@ -165,84 +192,273 @@
     </div> -->
 
     <div class="features-section__container">
-        <div class="features-section__title">SUPPORT</div>
         <div class="feature__items">
             <div class="feature__item">
                 <div class="item-image">
-                    <img src="./assets/incubation.jpg" alt="">
+                    <img src="./assets/innovation.avif" alt="">
                 </div>
                 <div class="item-text">
-                    <div class="item-title" style="color:#E6007E;">Incubation program</div>
-                    <div class="item-desc">Incubation programs offer a comprehensive package of resources and support, including mentorship, office space, networking opportunities, and access to funding, to help startups develop and scale their businesses.</div>
+                    <div class="item-title">Inspiring Change, Igniting
+                        <span style="color:#E6007E;">Innovation</span>
+                    </div>
                 </div>
+                <!-- <div class="item-dot"></div> -->
+                <!-- <div class="item-line left-line"></div> -->
+                <!-- <div class="item-line right-line"></div> -->
             </div>
             <div class="feature__item">
                 <div class="item-image">
-                    <img src="./assets/coworking.jpg" alt="">
+                    <img src="./assets/incubation.avif" alt="">
                 </div>
                 <div class="item-text">
-                    <div class="item-title"  style="color:#EA5624;">Co-working environment</div>
-                    <div class="item-desc">Co-working environments provide shared office space for individuals and companies, fostering collaboration, community, and cost-efficiency through flexible and customizable membership options.</div>
+                    <div class="item-title">Unleashing Potential, Through
+                        <span style="color:#EA5624;">Incubation</span>
+                    </div>
                 </div>
+                <!-- <div class="item-dot"></div>
+                <div class="item-line left-line"></div>
+                <div class="item-line right-line"></div> -->
             </div>
             <div class="feature__item">
                 <div class="item-image">
-                    <img src="./assets/mentoring.jpg" alt="">
+                    <img src="./assets/acclerator.avif" alt="">
                 </div>
                 <div class="item-text">
-                    <div class="item-title"  style="color:#FFED00;">Mentoring support</div>
-                    <div class="item-desc">Mentoring support offers guidance and advice from experienced professionals to help individuals and organizations develop skills, overcome challenges, and achieve their personal and professional goals.</div>
+                    <div class="item-title">Propelling Ventures with
+                        <span style="color:#FFED00;">Acceleration</span>
+                    </div>
                 </div>
+                <!-- <div class="item-dot"></div>
+                <div class="item-line left-line"></div>
+                <div class="item-line right-line"></div> -->
             </div>
             <div class="feature__item">
                 <div class="item-image">
-                    <img src="./assets/networking.jpg" alt="">
+                    <img src="./assets/investment.avif" alt="">
                 </div>
                 <div class="item-text">
-                    <div class="item-title" style="color:#322984;">Network</div>
-                    <div class="item-desc">Access to a strong network across government departments, corporate organizations and a pool of investors.</div>
+                    <div class="item-title">Fueling Futures through <span style="color:#009FE3;">Investment</span>
+                    </div>
                 </div>
+                <!-- <div class="item-dot"></div>
+                <div class="item-line left-line"></div>
+                <div class="item-line right-line"></div> -->
             </div>
+            <div class="feature__item">
+                <div class="item-image">
+                    <img src="./assets/coworking.avif" alt="">
+                </div>
+                <div class="item-text">
+                    <div class="item-title">Productivity Unleashed through
+                        <span style="color:#322984;">Coworking</span>
+                    </div>
+                </div>
+                <!-- <div class="item-dot"></div>
+                <div class="item-line left-line"></div>
+                <div class="item-line right-line"></div> -->
+            </div>
+            <div class="feature__item">
+                <div class="item-image">
+                    <img src="./assets/mentorship.avif" alt="">
+                </div>
+                <div class="item-text">
+                    <div class="item-title">Empowering Growth through
+                        <span style="color:#7FA84E;">Mentorship</span>
+                    </div>
+                </div>
+                <!-- <div class="item-dot"></div>
+                <div class="item-line left-line"></div>
+                <div class="item-line right-line"></div> -->
+            </div>
+            <div class="feature__item">
+                <div class="item-image">
+                    <img src="./assets/community.jpeg" alt="">
+                </div>
+                <div class="item-text">
+                    <div class="item-title">
+                        <span style="color:#F29000;">Community</span><br>Connect, Thrive, Inspire.
+                    </div>
+                </div>
+                <!-- <div class="item-dot"></div>
+                <div class="item-line left-line"></div>
+                <div class="item-line right-line"></div> -->
+            </div>
+            <div class="feature__item">
+                <div class="item-image">
+                    <img src="./assets/programs.avif" alt="">
+                </div>
+                <div class="item-text">
+                    <div class="item-title">Pathways to Success: <span style="color:#E6007E;">Programs</span></div>
+                </div>
+                <!-- <div class="item-dot"></div>
+                <div class="item-line left-line"></div> -->
+                <!-- <div class="item-line right-line"></div> -->
+            </div>
+            <div class="feature__item">
+                <div class="item-image">
+                    <img src="./assets/innovation.avif" alt="">
+                </div>
+                <div class="item-text">
+                    <div class="item-title">Inspiring Change, Igniting
+                        <span style="color:#E6007E;">Innovation</span>
+                    </div>
+                </div>
+                <!-- <div class="item-dot"></div> -->
+                <!-- <div class="item-line left-line"></div> -->
+                <!-- <div class="item-line right-line"></div> -->
+            </div>
+            <div class="feature__item">
+                <div class="item-image">
+                    <img src="./assets/incubation.avif" alt="">
+                </div>
+                <div class="item-text">
+                    <div class="item-title">Unleashing Potential, Through
+                        <span style="color:#EA5624;">Incubation</span>
+                    </div>
+                </div>
+                <!-- <div class="item-dot"></div>
+                <div class="item-line left-line"></div>
+                <div class="item-line right-line"></div> -->
+            </div>
+            <div class="feature__item">
+                <div class="item-image">
+                    <img src="./assets/acclerator.avif" alt="">
+                </div>
+                <div class="item-text">
+                    <div class="item-title">Propelling Ventures with
+                        <span style="color:#FFED00;">Acceleration</span>
+                    </div>
+                </div>
+                <!-- <div class="item-dot"></div>
+                <div class="item-line left-line"></div>
+                <div class="item-line right-line"></div> -->
+            </div>
+            <div class="feature__item">
+                <div class="item-image">
+                    <img src="./assets/investment.avif" alt="">
+                </div>
+                <div class="item-text">
+                    <div class="item-title">Fueling Futures through <span style="color:#009FE3;">Investment</span>
+                    </div>
+                </div>
+                <!-- <div class="item-dot"></div>
+                <div class="item-line left-line"></div>
+                <div class="item-line right-line"></div> -->
+            </div>
+            <div class="feature__item">
+                <div class="item-image">
+                    <img src="./assets/coworking.avif" alt="">
+                </div>
+                <div class="item-text">
+                    <div class="item-title">Productivity Unleashed through
+                        <span style="color:#322984;">Coworking</span>
+                    </div>
+                </div>
+                <!-- <div class="item-dot"></div>
+                <div class="item-line left-line"></div>
+                <div class="item-line right-line"></div> -->
+            </div>
+            <div class="feature__item">
+                <div class="item-image">
+                    <img src="./assets/mentorship.avif" alt="">
+                </div>
+                <div class="item-text">
+                    <div class="item-title">Empowering Growth through
+                        <span style="color:#7FA84E;">Mentorship</span>
+                    </div>
+                </div>
+                <!-- <div class="item-dot"></div>
+                <div class="item-line left-line"></div>
+                <div class="item-line right-line"></div> -->
+            </div>
+            <div class="feature__item">
+                <div class="item-image">
+                    <img src="./assets/community.jpeg" alt="">
+                </div>
+                <div class="item-text">
+                    <div class="item-title">
+                        <span style="color:#F29000;">Community</span><br>Connect, Thrive, Inspire.
+                    </div>
+                </div>
+                <!-- <div class="item-dot"></div>
+                <div class="item-line left-line"></div>
+                <div class="item-line right-line"></div> -->
+            </div>
+            <div class="feature__item">
+                <div class="item-image">
+                    <img src="./assets/programs.avif" alt="">
+                </div>
+                <div class="item-text">
+                    <div class="item-title">Pathways to Success: <span style="color:#E6007E;">Programs</span></div>
+                </div>
+                <!-- <div class="item-dot"></div>
+                <div class="item-line left-line"></div> -->
+                <!-- <div class="item-line right-line"></div> -->
+            </div>
+        </div>
+
+        <div class="rotate-button__container">
+            <div class="rotate-button rotate-left"><</div>
+            <div class="rotate-button rotate-right">></div>
         </div>
     </div>
 
     <div id="footer">
         <div id="footer-top">
-            <div id="footer-links-container">
+            <!-- <div id="footer-links-container">
+            <div id="footer-links">
+                <span>
+                    <a href="/" class="footer-link-item">TEAM</a>
+                </span>
+                <span>
+                    <a href="/" class="footer-link-item">CAREERS</a>
+                </span>
+                <span>
+                    <a href="/" class="footer-link-item">BLOG</a>
+                </span>
+                
+            </div>
+        </div> -->
+            <div id="footer-socials">
+                <!-- <div id="footer-newsletter">
+                NEWSLETTER.
+                <br>
+                <button>Subscribe</button>
+            </div> -->
+                <!-- <div id="footer-links-container">
                 <div id="footer-links">
                     <span>
-                        <a href="/" class="footer-link-item">TEAM</a>
+                        <a href="/" class="footer-link-item">PROGRAMS</a>
                     </span>
                     <span>
-                        <a href="/" class="footer-link-item">CAREERS</a>
-                    </span>
-                    <span>
-                        <a href="/" class="footer-link-item">BLOG</a>
-                    </span>
-                    <span>
-                        <a href="/" class="footer-link-item">CONTACT US</a>
+                        <a href="/" class="footer-link-item">REACHOUT</a>
                     </span>
                 </div>
-            </div>
-            <div id="footer-socials">
-                <div id="footer-newsletter">
-                    SUBSCRIBE TO OUR NEWSLETTER.
-                    <br>
-                    <button>Subscribe</button>
-                </div>
+            </div> -->
                 <div id="footer-connect">
-                    <p>CONNECT</p>
+                    <p>REACHOUT</p>
                     <div id="social-media-container">
-                        <a href="https://www.facebook.com/profile.php?id=100092453291720" target="_blank">
-                            <i class="fa fa-facebook-f fa-lg social-media-item facebook-icon" style="color: #ffffff;"></i>
+                        <a href="whatsapp://send?phone=919428420419&text=example" target="blank">
+                            <i class="fa fa-solid fa-lg fa-phone social-media-item linkedin-icon"
+                                style="color: #ffffff;"></i>
                         </a>
-                        <i class="fa fa-twitter fa-lg social-media-item twitter-icon" style="color: #ffffff;"></i>
-                        <!-- <i class="fa fa-youtube fa-lg social-media-item youtube-icon" style="color: #ffffff;"></i> -->
-                        <a href="https://www.instagram.com/incub8.co/" target="_blank">
-                            <i class="fa fa-instagram fa-lg social-media-item instagram-icon" style="color: #ffffff;"></i>
+                        <a href="mailto:kalp@incub8.co" target="_blank">
+                            <i class="fa fa-solid fa-lg fa-envelope social-media-item linkedin-icon"
+                                style="color: #ffffff;"></i>
                         </a>
                         <a href="https://www.linkedin.com/company/incub8-co/about/" target="_blank">
-                            <i class="fa fa-linkedin fa-lg social-media-item linkedin-icon" style="color: #ffffff;"></i>
+                            <i class="fa fa-linkedin fa-lg social-media-item linkedin-icon"
+                                style="color: #ffffff;"></i>
+                        </a>
+                        <i class="fa fa-twitter fa-lg social-media-item twitter-icon" style="color: #ffffff;"></i>
+                        <a href="https://www.facebook.com/profile.php?id=100092453291720" target="_blank">
+                            <i class="fa fa-facebook-f fa-lg social-media-item facebook-icon"
+                                style="color: #ffffff;"></i>
+                        </a>
+                        <!-- <i class="fa fa-youtube fa-lg social-media-item youtube-icon" style="color: #ffffff;"></i> -->
+                        <a href="https://www.instagram.com/incub8.co/" target="_blank">
+                            <i class="fa fa-instagram fa-lg social-media-item instagram-icon"
+                                style="color: #ffffff;"></i>
                         </a>
                         <!-- <i class="fa fa-medium fa-lg social-media-item medium-icon" style="color: #ffffff;"></i> -->
                     </div>
@@ -254,12 +470,13 @@
                 <a id="footer-logo" href="./index.html">
                     <img src="./assets/logo-white.png" alt="">
                 </a>
-                <div id="footer-name">Incub8, Ground Floor, Dholakia Ventures, <br>Plot No. D-02, HK Hub building,<br>GHB, Gem and Jewellery Park,<br>Ichchhapore, Surat, Gujarat.</div>
+                <div id="footer-name">Incub8, Ground Floor, Dholakia Ventures, <br>Plot No. D-02, HK Hub
+                    building,<br>GHB, Gem and Jewellery Park,<br>Ichchhapore, Surat, Gujarat.</div>
             </div>
             <div id="footer-credits">
                 <div id="policy-links">
-                    <span><a href="">PRIVACY POLICY</a></span> - 
-                    <span><a href="">TERMS & CONDITIONS</a></span> - 
+                    <span><a href="">PRIVACY POLICY</a></span> -
+                    <span><a href="">TERMS & CONDITIONS</a></span> -
                     <span><a href="">LEGAL</a></span> -
                     <span><a href="">GOVERNANCE</a></span>
                 </div>
@@ -270,7 +487,8 @@
         </div>
     </div>
 
-    <!-- CUSTOM SCRIPTS -->
+        <!-- CUSTOM SCRIPTS -->
+    <script src="./js/sidebarJS.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/sliderJS.js"></script>
     <script src="./js/identityJS.js"></script>
