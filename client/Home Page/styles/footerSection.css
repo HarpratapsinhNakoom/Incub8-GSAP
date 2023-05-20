@@ -112,9 +112,9 @@
 .facebook-icon:hover {background-color: #1778f2;}
 .twitter-icon:hover {background-color: #1DA1F2;}
 .instagram-icon:hover {background-color: #d62976;}
-.youtube-icon:hover {background-color: #FF0000;}
+.email-icon:hover {background-color: #FF0000;}
 .linkedin-icon:hover {background-color: #0077b5;}
-.medium-icon:hover {background-color: #3CB371;}
+.phone-icon:hover {background-color: #3CB371;}
 
 #footer-bottom {
     flex: 1;

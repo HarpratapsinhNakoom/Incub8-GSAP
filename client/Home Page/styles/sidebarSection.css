@@ -121,6 +121,16 @@
     transition: all 0.6s ease-in;
 }
 
+#sidebar-links::-webkit-scrollbar {
+    display: none;
+}
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  #sidebar-links {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
 .sidebar-link-item {
     font-size: 35px;
     font-weight: 700;
