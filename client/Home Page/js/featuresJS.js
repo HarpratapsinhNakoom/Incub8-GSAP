@@ -32,21 +32,21 @@ revealContainers.forEach((container) => {
 });
 
 
-const left_button = document.querySelector(".rotate-left");
-const right_button = document.querySelector(".rotate-right");
-const features_list = document.querySelector(".feature__items");
-let rotate_counter = 0;
+// const left_button = document.querySelector(".rotate-left");
+// const right_button = document.querySelector(".rotate-right");
+// const features_list = document.querySelector(".feature__items");
+// let rotate_counter = 0;
 
-right_button.addEventListener("click", () => {
-  if(rotate_counter === 7) return;
-  rotate_counter++;
+// right_button.addEventListener("click", () => {
+//   if(rotate_counter === 7) return;
+//   rotate_counter++;
 
-  features_list.style.translate = `-${rotate_counter}00%`;
-})
+//   features_list.style.translate = `-${rotate_counter}00%`;
+// })
 
-left_button.addEventListener("click", () => {
-  if(rotate_counter === 0) return;
-  rotate_counter--;
+// left_button.addEventListener("click", () => {
+//   if(rotate_counter === 0) return;
+//   rotate_counter--;
 
-  features_list.style.translate = `-${rotate_counter}00%`;
-})
+//   features_list.style.translate = `-${rotate_counter}00%`;
+// })

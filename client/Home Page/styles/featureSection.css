@@ -57,10 +57,18 @@ svg > .mask {
     width: 300vw;
 } */
 
-.features-section__container {
+.features-section__container  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../Common components/assets/8646.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.features-section__container > div {
     max-width: 800px;
-    /* width: 100%; */
-    margin: 100px auto;
+    padding: 170px 0;
     overflow-x: hidden;
 }
 
@@ -72,11 +80,10 @@ svg > .mask {
 }
 
 .feature__items {
-    width: 100%;
+    max-width: 800px;
     /* margin: 0 auto; */
     display: flex;
     /* align-items: center; */
-    /* overflow-x: hidden; */
     /* position: relative; */
     animation: feature_slider 20s linear infinite;
     gap: 50px;
@@ -197,4 +204,31 @@ svg > .mask {
 .rotate-button {
     font-size: 40px;
     cursor: pointer;
+}
+
+.about-video__container {
+    /* position: absolute; */
+    /* top: 0;
+    left: 0; */
+    width: 100%;
+    height: 100%; 
+    overflow: hidden;
+}
+
+
+.about-video__container > video {
+    filter: brightness(50%);
+    /* Make video to at least 100% wide and tall */
+    min-width: 100%;
+    min-height: 100%;
+    
+    /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+    width: auto;
+    height: auto;
+    
+    /* Center the video */
+    /* position: absolute; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }

@@ -142,9 +142,13 @@
     text-decoration: underline;
 }
 
-@media screen and (max-width : 676px) {
+@media screen and (max-width : 770px) {
     #navbar {
         display: flex;
+    }
+
+    #horizontal-navbar {
+        display: none;
     }
 }
 

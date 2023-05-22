@@ -1,4 +1,4 @@
-@media screen and (width <= 1024px) {
+/* @media screen and (width <= 1024px) {
     .title > p {
         font-size: 80px;
     }
@@ -14,38 +14,38 @@
     nav ul li {
         margin: 10px;
     }
-}
+} */
 @media screen and (width <= 900px) {
-    .about__title {
+    /* .about__title {
         top: 0;
     }
     .about__title > span {
         font-size: 70px;
-    }
-    .features-section__container {
+    } */
+    .features-section__container > div{
         min-width: fit-content;
         margin-left: 45px;
         margin-right: 45px;
     }
 
-    .feature__items {
-        animation: feature_slider 32s linear infinite;
-    }
+    /* .feature__items {
+        animation: feature_slider 17s linear infinite;
+    } */
 
-    @keyframes feature_slider {
+    /* @keyframes feature_slider {
         from {
             translate: 0;
         }
         to {
-            translate: -85%;
+            translate: -105%;
         }
-    }
+    } */
 }
 
 @media screen and (width <= 768px) {
-    .title > p {
+    /* .title > p {
         font-size: 55px;
-    }
+    } */
     .about-info__container {
         width: auto;
         margin: 0 45px;
@@ -53,15 +53,15 @@
 }
 
 @media screen and (width <= 680px) {
-    .title > p {
+    /* .title > p {
         font-size: 45px;
-    }
+    } */
 
     .about__desc {
         font-size: 10px;
     }
 
-    .features-section__container {
+    .features-section__container > div{
         gap: 70px;
     }
 }
@@ -74,8 +74,8 @@
     .wtwo {
         font-size: 35px;
     }
-    .title > p {
-        font-size: 35px;
+    .title {
+        margin: 0 20px;
     }
 
     .about__title > span {
@@ -91,9 +91,9 @@
         font-size: 13px;
     }
 
-    .feature__items {
+    /* .feature__items {
         animation: feature_slider 43s linear infinite;
-    }
+    } */
 }
 
 @media screen and (width <= 500px) {
@@ -104,15 +104,15 @@
         flex-direction: column;
     }
 
-    .features-section__container {
+    .features-section__container >div {
         margin-left: 25px;
         margin-right: 25px;
     }
 }
 @media screen and (width <= 425px) {
-    .main__info {
+    /* .main__info {
         flex-direction: column;
-    }
+    } */
 
     .line-one {
         left: 28%;
