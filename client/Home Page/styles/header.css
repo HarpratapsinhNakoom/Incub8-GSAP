@@ -64,7 +64,10 @@ body {
 
 #horizontal-navbar {
     z-index: 10;
-    position: fixed;
+    /* position: fixed; */
+    position: absolute;
+    left: 0;
+    top: 0;
     display: flex;
     width: 100%;
     align-items: center;
@@ -144,7 +147,7 @@ nav ul li a:hover::after {
 .main__info {
     width: 100vw;
     height: 100vh;
-    /* height: calc(100vh - 50px); */
+    /* height: calc(100vh - 80px); */
     display: flex;
     align-items: center;
     justify-content: start;
@@ -176,6 +179,7 @@ nav ul li a:hover::after {
 
 .video > video {
     width: 100%;
+    height: auto;
     /* height: 100%; */
     filter: brightness(70%);
     /* Make video to at least 100% wide and tall */

@@ -15,7 +15,7 @@
         margin: 10px;
     }
 } */
-@media screen and (width <= 960px) {
+@media screen and (width <= 1000px) {
     .video > video {
         height: 100%;
         width: auto;
