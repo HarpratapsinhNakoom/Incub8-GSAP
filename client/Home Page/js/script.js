@@ -1,19 +1,3 @@
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-//   var currentScrollPos = window.pageYOffset;
-//   if (prevScrollpos > currentScrollPos) {
-//     document.getElementById("navbar").style.top = "0";
-//   } else {
-//     document.getElementById("navbar").style.top = "-200px";
-//   }
-//   prevScrollpos = currentScrollPos;
-
-    console.log("heree");
-}
-
-window.onload = () => {
-	document.getElementById("navbar").style.top = "0";
-}
 
 TweenMax.from(".logo", 1, {
     opacity: 0,

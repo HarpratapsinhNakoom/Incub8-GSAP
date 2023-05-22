@@ -58,17 +58,35 @@ svg > .mask {
 } */
 
 .features-section__container  {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url("../../Common components/assets/8646.jpg");
-    background-position: center;
+    /* display: flex;
+    align-items: center; */
+    /* justify-content: center; */
+    /* padding-bottom: 150px; */
+    position: relative;
+    /* padding-top: 50px;
+    padding-bottom: 230px; */
+    padding: 200px 0;
+    background-color: black;
+    /* background-image: url("../../Common components/assets/footer-bg.png");
+    background-position: bottom;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+}
+
+.about-bg-container {
+    position: absolute;
+    width: 100%;
+    height: 170px;
+    object-fit: contain;
+}
+
+.about-bg-container > img {
+    width: 100%;
+    height: 100%;
 }
 .features-section__container > div {
-    max-width: 800px;
-    padding: 170px 0;
+    /* max-width: 800px; */
+    /* background-color: #FCFCFE; */
     overflow-x: hidden;
 }
 
@@ -116,6 +134,7 @@ svg > .mask {
 }
 .feature__item {
     position: relative;
+    
     /* width: fit-content; */
     /* border: 1px solid black; */
     /* width: 90%; */
@@ -154,7 +173,9 @@ svg > .mask {
 
 .item-title {
     font-size: 22px;
-    margin-bottom: 25px;
+    margin: 17px 0;
+    font-weight: bold;
+    color: aliceblue;
 }
 
 .item-title > span {
@@ -163,7 +184,6 @@ svg > .mask {
 
 .item-desc {
     font-size: 14px;
-    color: #696969;
 }
 
 .item-dot {

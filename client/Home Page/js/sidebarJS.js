@@ -4,6 +4,8 @@
 // 	});
 // });
 
+console.log("hereee");
+
 const toggleBtn = document.getElementById("navbar-icon");
 
 
@@ -39,15 +41,5 @@ sidebar_item.forEach(item => {
 
 // var prevScrollpos = window.pageYOffset;
 // window.onscroll = function() {
-//   var currentScrollPos = window.pageYOffset;
-//   if (prevScrollpos > currentScrollPos) {
-//     document.getElementById("navbar").style.top = "0";
-//   } else {
-//     document.getElementById("navbar").style.top = "-200px";
-//   }
-//   prevScrollpos = currentScrollPos;
-// }
-
-// window.onload = () => {
-// 	document.getElementById("navbar").style.top = "0";
+//     console.log(document.documentElement.scrollTop || document.body.scrollTop);
 // }

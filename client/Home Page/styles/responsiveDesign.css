@@ -15,6 +15,12 @@
         margin: 10px;
     }
 } */
+@media screen and (width <= 960px) {
+    .video > video {
+        height: 100%;
+        width: auto;
+    }
+}
 @media screen and (width <= 900px) {
     /* .about__title {
         top: 0;
