@@ -19,41 +19,24 @@ body {
     position: relative;
 }
 
-.join-btn {
-    position: relative;
-    width: 95%;
-    font-size: 25px;
-    font-weight: 500;
-    background-color: #FFD601;
-    color: #4A2199;
-    border: none;
-    padding: 15px;
-    border-radius: 30px;
-}
 
-.join-btn-gradient-container {
-    z-index: -1;
-    top: 0;
-    left: 0;
-    position: absolute;
-    width: 95%;
-    height: 70px;
-    background: linear-gradient(-45deg, #FFED93 0%, #ff930f 100% );
-    /* transform: translate3d(0px, 10px, 0) scale(1); */
-    transform: translate3d(0px, 4px, 0) scale(0.8);
-    filter: blur(30px);
-    opacity: var(0.7);
-    transition: all 0.5s ease;
+.join-btn {
+    text-decoration: none;
+    font-size: 26px;
+    border: 2px solid transparent;
+    padding: 10px 18px;
+    border-radius: 6px;
+    background-color: #4A2199;
+    color: white;
 }
 
 .join-btn:hover {
     cursor: pointer;
+    background-color: white;
+    color: #4A2199;
+    border: 2px solid #4A2199;
 }
-
-.join-btn:hover + .join-btn-gradient-container {
-    transform: translate3d(0px, 8px, 0) scale(1);
-}
-
+/* 
 #go-home-btn {
     color: #4A2199;
     font-size: 20px;
@@ -63,4 +46,4 @@ body {
 
 #go-home-btn:hover {
     text-decoration: underline;
-}
+} */

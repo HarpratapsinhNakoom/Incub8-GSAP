@@ -59,13 +59,7 @@
 
 .item-mentor {
     font-size: 25px;
-    margin-bottom: 20px;
-}
-
-.item-join {
-    position: relative;
-    text-align: center;
-    width: 250px;
+    margin-bottom: 40px;
 }
 
 .item-mentor > span {
