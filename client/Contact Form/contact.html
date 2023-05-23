@@ -9,12 +9,48 @@
     <!-- STYLES -->
     <link rel="stylesheet" href="./contact.css">
     <link rel="stylesheet" href="./contactResponsive.css">
+    <link rel="stylesheet" href="../Common components/styles/navbarSection.css">
 
     <!-- CDNS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
+    <nav id="navbar">
+        <div id="navbar-content" style="--justify_content: space-between;">
+            <div id="navbar-logo">
+                <a href="../Home Page/index.html">
+                    <img src="../Common components/assets/logo-white.png" alt="">
+                </a>
+            </div>
+
+            <div id="navbar-toggle-container">
+                <div id="navbar-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div id="navbar-links">
+                <a href="../Home Page/index.html" class="navbar-link-item">HOME</a>
+                <!-- <a href="#page2" class="navbar-link-item">INCUBATION</a>
+                <a href="" class="navbar-link-item">ACCELERATION</a>
+                <a href="" class="navbar-link-item">INVESTMENT</a> -->
+                <a href="../Events page/events.html" class="navbar-link-item">PROGRAMS</a>
+                <a href="./contact.html" class="navbar-link-item">REACHOUT</a>
+            </div>
+        </div>
+        <div id="sidebar-links">
+            <a href="../Home Page/index.html" class="sidebar-link-item">HOME</a>
+            <!-- <a href="" class="sidebar-link-item">INCUBATION</a>
+            <a href="" class="sidebar-link-item">ACCELERATION</a>
+            <a href="" class="sidebar-link-item">INVESTMENT</a> -->
+            <a href="../Events page/events.html" class="sidebar-link-item">PROGRAMS</a>
+            <a href="./contact.html" class="sidebar-link-item">REACHOUT</a>
+        </div>
+    </nav>
+
     <div class="contact__container">
         <div class="contact__title">
             <h2>Contact Us</h2>
@@ -95,5 +131,6 @@
     </script>
 
     <script src="./sendEmail.js"></script>
+    <script src="../Common components/js/navbarJs.js"></script>
 </body>
 </html>
