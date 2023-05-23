@@ -1,0 +1,27 @@
+@media screen and (width <= 890px) {
+    .main__container {
+        flex-direction: column;
+        margin: 0 30px;
+    }
+
+    .main__left {
+        gap: 40px;
+    }
+}
+
+@media screen and (width <= 420px) {
+    .main__socials > a {
+        margin-right: 25px;
+    }
+
+    .main__left {
+        padding: 30px 12px;
+    }
+    .main__middle > div > i {
+        margin: 0;
+    }
+
+    .main__form {
+        padding: 30px 0;
+    }
+}
