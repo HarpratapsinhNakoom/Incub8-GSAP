@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+    <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incub8 - Accelerator</title>
+
+
+    <!-- STYLED -->
+    <link rel="stylesheet" href="./styles/registerForm.css">
+    <link rel="stylesheet" href="../Common components/styles/navbarSection.css">
+
+    <!-- CDNS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+    <nav id="navbar">
+        <div id="navbar-content" style="--justify_content: space-between;">
+            <div id="navbar-logo">
+                <a href="../Home Page/index.html">
+                    <img src="../Common components/assets/logo-white.png" alt="">
+                </a>
+            </div>
+
+            <div id="navbar-toggle-container">
+                <div id="navbar-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div id="navbar-links">
+                <a href="../Home Page/index.html" class="navbar-link-item">HOME</a>
+                <!-- <a href="#page2" class="navbar-link-item">INCUBATION</a>
+                <a href="" class="navbar-link-item">ACCELERATION</a>
+                <a href="" class="navbar-link-item">INVESTMENT</a> -->
+                <a href="../Events page/events.html" class="navbar-link-item">PROGRAMS</a>
+                <a href="../Contact Form/contact.html" class="navbar-link-item">REACHOUT</a>
+            </div>
+        </div>
+        <div id="sidebar-links">
+            <a href="../Home Page/index.html" class="navbar-link-item">HOME</a>
+            <!-- <a href="#page2" class="navbar-link-item">INCUBATION</a>
+            <a href="" class="navbar-link-item">ACCELERATION</a>
+            <a href="" class="navbar-link-item">INVESTMENT</a> -->
+            <a href="../Events page/events.html" class="navbar-link-item">PROGRAMS</a>
+            <a href="../Contact Form/contact.html" class="navbar-link-item">REACHOUT</a>
+        </div>
+    </nav>
+
+    <div class="page__title">
+        <h2>Register for <span>Sales Bootcamp</span></h2>
+        <p>by <span>Ritam Bhatnagar</span> at <u>Incub8</u> - Dholakia Ventures</p>
+    </div>
+    
+    <!-- <div class="event_desc">lorem</div> -->
+    <form class="main_form__container">
+
+
+        <!-- PERSONEL QUESTION : NAME EMAIL AGE -->
+        <div>
+            <label for="name">Name</label>
+            <input required type="text" name="name" id="name">
+        </div>
+        <div class="group_container">
+            <div>
+                <label for="email">Email</label>
+                <input required type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="age">Age</label>
+                <input required type="number" name="age" id="age">
+            </div>
+        </div>
+
+        <!-- WORK RELATED QUESTIONS -->
+        <div class="group_container">
+            <div>
+                <label for="current_position">Current Position</label>
+                <input required type="text" name="current_position" id="current_position">
+            </div>
+    
+            <div>
+                <label for="current_company">Which company do you belong to?</label>
+                <input required type="text" name="current_company" id="current_company">
+            </div>
+        </div>
+
+        <div>
+            <label for="work_look">What does your work look like?</label>
+            <textarea name="work_look" id="work_look" cols="30" rows="5"></textarea>
+        </div>
+
+        <div>
+            <label for="sales_in_work">Is sales part of your work? If yes, How?</label>
+            <textarea name="sales_in_work" id="sales_in_work" cols="30" rows="5"></textarea>
+        </div>
+
+        <div>
+            <label for="sell_what">What do you sell?</label>
+            <input required type="text" name="sell_what" id="sell_what">
+        </div>
+
+        <div class="radio_container">
+            <label for="What kind of buisness do you do?">What kind of business do you do?</label>
+            <div>
+                <div>
+                    <input required type="radio" name="buisness_type" id="b2b" value="b2b"><p>B2B</p>
+                </div>
+                <div>
+                    <input required type="radio" name="buisness_type" id="b2c" value="b2c"><p>B2C</p>
+                </div>
+                <div>
+                    <input required type="radio" name="buisness_type" id="both" value="both"><p>Both</p>
+                </div>
+                <div>
+                    <input required type="radio" name="buisness_type" id="other_business" value="other"><p>Other</p>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <label for="current_sales_way">How do you currently do sales?</label>
+            <textarea name="current_sales_way" id="current_sales_way" cols="30" rows="5"></textarea>
+        </div>
+
+        <div class="checkbox_container">
+            <label for="sales_tools">What sales tools do you currently use?</label>
+            <div>
+                <div>
+                    <input required type="checkbox" name="sales_tools" id="email_tool" value="email"><p>Email</p>
+                </div>
+                <div>
+                    <input required type="checkbox" name="sales_tools" id="social_media" value="social_media"><p>Social Media</p>
+                </div>
+                <div>
+                    <input required type="checkbox" name="sales_tools" id="automation_tool" value="automation_tool"><p>Automation Tool</p>
+                </div>
+                <div>
+                    <input required type="checkbox" name="sales_tools" id="crm" value="crm"><p>CRM</p>
+                </div>
+                <div>
+                    <input required type="checkbox" name="sales_tools" id="excel" value="excel"><p>Excel</p>
+                </div>
+                <div>
+                    <input required type="checkbox" name="sales_tools" id="events" value="events"><p>Events</p>
+                </div>
+                <div>
+                    <input required type="checkbox" name="sales_tools" id="pr" value="pr"><p>PR</p>
+                </div>
+                <div>
+                    <input required type="checkbox" name="sales_tools" id="other_tool" value="other"><p>Other</p>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <label for="avg_deal_size">What is your average sales deal size?</label>
+            <input required type="text" name="avg_deal_size" id="avg_deal_size">
+        </div>
+
+        <div>
+            <label for="sales_learn_help">How do you think learning sales will help you?</label>
+            <input required type="text" name="sales_learn_help" id="sales_learn_help">
+        </div>
+
+        <div class="group_container">
+            <div>
+                <label for="signup_reason">What made you signup for this bootcamp?</label>
+                <input required type="text" name="signup_reason" id="signup_reason">
+            </div>
+    
+            <div>
+                <label for="heard_about">Have you heard earlier about Ritam Bhatnagar or India Film Project?</label>
+                <input required type="text" name="heard_about" id="heard_about">
+            </div>
+        </div>
+
+        <div class="group_container">
+            <div>
+                <label for="prev_attend">Has anyone you know attended this bootcamp before?</label>
+                <input required type="text" name="prev_attend" id="prev_attend">
+            </div>
+    
+            <div>
+                <label for="source_of_bootcamp">How did you get to know about this bootcamp?</label>
+                <input required type="text" name="source_of_bootcamp" id="source_of_bootcamp">
+            </div>
+        </div>
+
+        <div class="radio_container">
+            <label for="attend_period">How would you like to attend this bootcamp?</label>
+            <div>
+            <div>
+                <input required type="radio" name="attend_period" id="phy_mode" value="phy_mode"><p>Physical Mode [ June 9-10, 2023 |  10 am to 6 pm ]</p>
+            </div>
+            <div>
+                <input required type="radio" name="attend_period" id="vir_mode" value="vir_mode"><p>Virtual Mode [ June 16,17,18 | 6 pm to 10 pm ]</p>
+            </div>
+            </div>
+        </div>
+    </form>
+
+    <!-- NAVBAR JAVASCRIPT -->
+    <script src="../Common components/js/navbarJs.js"></script>
+</body>
+</html>
