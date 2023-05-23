@@ -23,9 +23,11 @@ document.getElementById('main__form')
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
       btn.value = 'Send Message'; 
-      alert('Sent!');
+      alert('We have recieved the email.😄');
+      document.getElementById('main__form').reset();
     }, (err) => {
       btn.value = 'Send Email';
-      alert(JSON.stringify(err));
+      alert("Oops! Something went wrong. Kindly try again.");
     });
+
 });
