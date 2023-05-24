@@ -37,6 +37,12 @@ sidebar_item.forEach(item => {
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
+  if(currentScrollPos > 150) {
+	document.getElementById("navbar").style.backgroundColor = "black";
+	}else{
+	  document.getElementById("navbar").style.backgroundColor = "transparent";
+
+  }
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "0";
   } else {

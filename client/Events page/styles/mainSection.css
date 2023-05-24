@@ -7,7 +7,7 @@
     flex-direction: column;
     width: 100%;
     position: relative;
-    height: 600px;
+    height: 550px;
 }
 #events-main > .video {
     position: absolute;
@@ -26,10 +26,23 @@
     filter: brightness(50%);
     /* filter: grayscale(100%); */
 }
+
+@media screen and (width <= 950px) {
+    #events-main > .video > video {
+        height: 100%;
+        width: auto;
+    }
+}
+
+@media screen and (width <= 600px) {
+    #events-main > .video > video {
+        transform: translate(-40%);
+    }
+}
 #main-heading {
     position: relative;
     z-index: 2;
-    font-size: 65px;
+    font-size: 55px;
     font-weight: 700;
     margin-bottom: 25px;
     color: aliceblue;
