@@ -78,145 +78,135 @@
 
         <!-- PERSONEL QUESTION : NAME EMAIL AGE -->
         <div>
-            <label for="name">Name</label>
+            <label for="name" class="required">Name of the Startup</label>
             <input required type="text" name="name" id="name">
         </div>
         <div class="group_container">
             <div>
-                <label for="email">Email</label>
-                <input required type="email" name="email" id="email">
+                <label for="elevator_pitch" class="required">Elevator Pitch - Describe what your company does in 100 characters or less:</label>
+                <textarea name="elevator_pitch" id="elevator_pitch" cols="30" rows="5"></textarea>
             </div>
             <div>
-                <label for="age">Age</label>
-                <input required type="number" name="age" id="age">
+                <label for="video_link" class="required">Minimum Viable Product Link or Demo Video Link</label>
+                <input required type="text" name="video_link" id="video_link">
+            </div>
+            <div>
+                <label for="video_credentials">Credentials (if required to access the MVP/Demo)</label>
+                <input required type="text" name="video_credentials" id="video_credentials">
             </div>
         </div>
 
-        <!-- WORK RELATED QUESTIONS -->
         <div class="group_container">
             <div>
-                <label for="current_position">Current Position</label>
-                <input required type="text" name="current_position" id="current_position">
+                <label for="success_reason" class="required">How do you know customers need what you’re making? How do you know people want this?</label>
+                <textarea name="success_reason" id="success_reason" cols="30" rows="5"></textarea>
             </div>
     
             <div>
-                <label for="current_company">Which company do you belong to?</label>
-                <input required type="text" name="current_company" id="current_company">
+                <label for="succeess_reason">Why will you succeed over others? </label>
+                <textarea name="succeess_reason" id="succeess_reason" cols="30" rows="5"></textarea>
             </div>
-        </div>
-
-        <div>
-            <label for="work_look">What does your work look like?</label>
-            <textarea name="work_look" id="work_look" cols="30" rows="5"></textarea>
-        </div>
-
-        <div>
-            <label for="sales_in_work">Is sales part of your work? If yes, How?</label>
-            <textarea name="sales_in_work" id="sales_in_work" cols="30" rows="5"></textarea>
-        </div>
-
-        <div>
-            <label for="sell_what">What do you sell?</label>
-            <input required type="text" name="sell_what" id="sell_what">
-        </div>
-
-        <div class="radio_container">
-            <label for="What kind of buisness do you do?">What kind of business do you do?</label>
-            <div>
-                <div>
-                    <input required type="radio" name="buisness_type" id="b2b" value="b2b"><p>B2B</p>
-                </div>
-                <div>
-                    <input required type="radio" name="buisness_type" id="b2c" value="b2c"><p>B2C</p>
-                </div>
-                <div>
-                    <input required type="radio" name="buisness_type" id="both" value="both"><p>Both</p>
-                </div>
-                <div>
-                    <input required type="radio" name="buisness_type" id="other_business" value="other"><p>Other</p>
-                </div>
-            </div>
-        </div>
-
-        <div>
-            <label for="current_sales_way">How do you currently do sales?</label>
-            <textarea name="current_sales_way" id="current_sales_way" cols="30" rows="5"></textarea>
         </div>
 
         <div class="checkbox_container">
-            <label for="sales_tools">What sales tools do you currently use?</label>
+            <label for="feedback_ways" class="required" >How are you collecting feedback of customers?</label>
             <div>
                 <div>
-                    <input required type="checkbox" name="sales_tools" id="email_tool" value="email"><p>Email</p>
+                    <input required type="checkbox" name="feedback_ways" id="no_feedback" value="no_feedback"><p>No feedback</p>
                 </div>
                 <div>
-                    <input required type="checkbox" name="sales_tools" id="social_media" value="social_media"><p>Social Media</p>
+                    <input required type="checkbox" name="feedback_ways" id="reviwes" value="reviwes"><p>Reviews</p>
                 </div>
                 <div>
-                    <input required type="checkbox" name="sales_tools" id="automation_tool" value="automation_tool"><p>Automation Tool</p>
+                    <input required type="checkbox" name="feedback_ways" id="customer_meet" value="customer_meet"><p>Meeting custumers in person</p>
                 </div>
                 <div>
-                    <input required type="checkbox" name="sales_tools" id="crm" value="crm"><p>CRM</p>
-                </div>
-                <div>
-                    <input required type="checkbox" name="sales_tools" id="excel" value="excel"><p>Excel</p>
-                </div>
-                <div>
-                    <input required type="checkbox" name="sales_tools" id="events" value="events"><p>Events</p>
-                </div>
-                <div>
-                    <input required type="checkbox" name="sales_tools" id="pr" value="pr"><p>PR</p>
-                </div>
-                <div>
-                    <input required type="checkbox" name="sales_tools" id="other_tool" value="other"><p>Other</p>
+                    <input required type="checkbox" name="feedback_ways" id="analytics" value="analytics"><p>Through Analytics</p>
                 </div>
             </div>
         </div>
 
         <div>
-            <label for="avg_deal_size">What is your average sales deal size?</label>
-            <input required type="text" name="avg_deal_size" id="avg_deal_size">
+            <label for="user_resistance" class="required">What resistance will users have to trying you and how will you overcome it?</label>
+            <textarea name="user_resistance" id="user_resistance" cols="30" rows="5"></textarea>
         </div>
 
         <div>
-            <label for="sales_learn_help">How do you think learning sales will help you?</label>
-            <input required type="text" name="sales_learn_help" id="sales_learn_help">
+            <label for="other_participation">If you have already participated or committed to participate in an incubator, "accelerator" or "pre-accelerator" program, please tell us about it.</label>
+            <textarea name="other_participation" id="other_participation" cols="30" rows="5"></textarea>
         </div>
 
-        <div class="group_container">
-            <div>
-                <label for="signup_reason">What made you signup for this bootcamp?</label>
-                <input required type="text" name="signup_reason" id="signup_reason">
-            </div>
-    
-            <div>
-                <label for="heard_about">Have you heard earlier about Ritam Bhatnagar or India Film Project?</label>
-                <input required type="text" name="heard_about" id="heard_about">
-            </div>
+        <div>
+            <label for="industry_connections">5 people in the industry from who you would like to get mentorship (LinkedIn Profiles)</label>
+            <textarea name="industry_connections" id="industry_connections" cols="30" rows="5"></textarea>
         </div>
 
-        <div class="group_container">
-            <div>
-                <label for="prev_attend">Has anyone you know attended this bootcamp before?</label>
-                <input required type="text" name="prev_attend" id="prev_attend">
-            </div>
-    
-            <div>
-                <label for="source_of_bootcamp">How did you get to know about this bootcamp?</label>
-                <input required type="text" name="source_of_bootcamp" id="source_of_bootcamp">
-            </div>
+        <div>
+            <label for="resources" class="required">What resources are required to make the startup successful?</label>
+            <textarea name="resources" id="resources" cols="30" rows="5"></textarea>
         </div>
 
         <div class="radio_container">
-            <label for="attend_period">How would you like to attend this bootcamp?</label>
+            <label for="office_available" class="required">Do you have an office space established?</label>
             <div>
+                <div>
+                    <input required type="radio" name="office_available" id="yes" value="yes"><p>Yes</p>
+                </div>
+                <div>
+                    <input required type="radio" name="office_available" id="no" value="no"><p>No</p>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <label for="monthly_revenue" class="required">What is your current monthly revenue? (INR)</label>
+            <input required type="text" name="monthly_revenue" id="monthly_revenue">
+        </div>
+        
+        <div>
+            <label for="required_funds">Funds required by the startup? (INR) </label>
+            <input required type="text" name="required_funds" id="required_funds">
+        </div>
+        
+        <div class="radio_container">
+            <label for="relocate" class="required">Are you willing to relocate Surat?</label>
             <div>
-                <input required type="radio" name="attend_period" id="phy_mode" value="phy_mode"><p>Physical Mode [ June 9-10, 2023 |  10 am to 6 pm ]</p>
+                <div>
+                    <input required type="radio" name="relocate" id="yes" value="yes"><p>Yes</p>
+                </div>
+                <div>
+                    <input required type="radio" name="relocate" id="no" value="no"><p>No</p>
+                </div>
             </div>
+        </div>
+
+        <div class="radio_container" style="flex-direction: column;">
+            <label for="small_entity">If the answer to the above question is no, then are you willing to register a small entity in Surat?</label>
             <div>
-                <input required type="radio" name="attend_period" id="vir_mode" value="vir_mode"><p>Virtual Mode [ June 16,17,18 | 6 pm to 10 pm ]</p>
+                <div>
+                    <input required type="radio" name="small_entity" id="yes" value="yes"><p>Yes</p>
+                </div>
+                <div>
+                    <input required type="radio" name="small_entity" id="no" value="no"><p>No</p>
+                </div>
             </div>
+        </div>
+
+        <div class="radio_container" style="flex-direction: column;">
+            <label for="can_pay_fee" class="required">Are you comfortable in paying the program fee?  (10000/month for online and 5000/month for offline)</label>
+            <div>
+                <div>
+                    <input required type="radio" name="can_pay_fee" id="yes" value="yes"><p>Yes</p>
+                </div>
+                <div>
+                    <input required type="radio" name="can_pay_fee" id="no" value="no"><p>No</p>
+                </div>
             </div>
+        </div>
+
+        <div>
+            <label for="signup_reason" class="required">What convinced you to apply to the accelerator program? </label>
+            <textarea name="signup_reason" id="signup_reason" cols="30" rows="5"></textarea>
         </div>
     </form>
 

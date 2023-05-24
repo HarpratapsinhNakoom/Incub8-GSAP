@@ -196,7 +196,13 @@ nav ul li a:hover::after {
     left: 50%;
     transform: translate(-50%,-50%); */
 
- }
+}
+
+@media screen and (width <= 500px) {
+    .video > video {
+        transform: translate(-20%);
+    }
+}
 
 .title {
     /* flex: 1; */

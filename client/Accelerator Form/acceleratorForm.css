@@ -47,6 +47,7 @@ body {
     -webkit-filter: brightness(50%);
     filter: brightness(50%);
     /* filter: grayscale(100%); */
+    /* transform: translate(0, -20%); */
 }
 
 @media screen and (width <= 950px) {
@@ -90,7 +91,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 55px;
+    gap: 45px;
     flex-direction: column;
 }
 
@@ -101,18 +102,18 @@ body {
 .group_container {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
 }
 
 label {
     font-size: 24px;
     opacity: 70%;
     /* margin-bottom: 20px; */
-    color: rgb(58, 39, 39);
+    color: rgb(35, 24, 24);
     font-weight: 600;
 }
 
-label::after {
+label.required::after {
     content: "*";
     color: red;
     padding-left: 4px;
