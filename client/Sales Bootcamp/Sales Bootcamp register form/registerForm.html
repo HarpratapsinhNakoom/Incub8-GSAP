@@ -51,18 +51,25 @@
             </div>
         </div>
         <div id="sidebar-links">
-            <a href="../../Home Page/index.html" class="navbar-link-item">HOME</a>
-            <!-- <a href="#page2" class="navbar-link-item">INCUBATION</a>
-            <a href="" class="navbar-link-item">ACCELERATION</a>
-            <a href="" class="navbar-link-item">INVESTMENT</a> -->
-            <a href="../../Events page/events.html" class="navbar-link-item">PROGRAMS</a>
-            <a href="../../Contact Form/contact.html" class="navbar-link-item">REACHOUT</a>
+            <a href="../../Home Page/index.html" class="sidebar-link-item">HOME</a>
+            <!-- <a href="#page2" class="sidebar-link-item">INCUBATION</a>
+            <a href="" class="sidebar-link-item">ACCELERATION</a>
+            <a href="" class="sidebar-link-item">INVESTMENT</a> -->
+            <a href="../../Events page/events.html" class="sidebar-link-item">PROGRAMS</a>
+            <a href="../../Contact Form/contact.html" class="sidebar-link-item">REACHOUT</a>
         </div>
     </nav>
 
     <div class="page__title">
-        <h2>Register for <span>Sales Bootcamp</span></h2>
-        <p>by <span>Ritam Bhatnagar</span> at <u>Incub8</u> - Dholakia Ventures</p>
+        <div class="video">
+            <video autoplay loop muted poster="../../Common components/assets/page-bg-poster.png">
+                <source src="../../Common components/assets/page-header-bg.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="title__container">
+            <h2>Register for <span>Sales Bootcamp</span></h2>
+            <p>by <span>Ritam Bhatnagar</span> at <u>Incub8</u> - Dholakia Ventures</p>
+        </div>
     </div>
     
     <!-- <div class="event_desc">lorem</div> -->
@@ -70,11 +77,11 @@
 
 
         <!-- PERSONEL QUESTION : NAME EMAIL AGE -->
-        <div>
-            <label for="name">Name</label>
-            <input required type="text" name="name" id="name">
-        </div>
         <div class="group_container">
+            <div>
+                <label for="name">Name</label>
+                <input required type="text" name="name" id="name">
+            </div>
             <div>
                 <label for="email">Email</label>
                 <input required type="email" name="email" id="email">
@@ -210,6 +217,10 @@
                 <input required type="radio" name="attend_period" id="vir_mode" value="vir_mode"><p>Virtual Mode [ June 16,17,18 | 6 pm to 10 pm ]</p>
             </div>
             </div>
+        </div>
+
+        <div class="payment__button">
+            <a href="">Payment</a>
         </div>
     </form>
 
