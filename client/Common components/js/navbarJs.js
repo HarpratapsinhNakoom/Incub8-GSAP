@@ -16,7 +16,7 @@ toggleBtn.addEventListener("click", () => {
 })
 
 window.addEventListener("resize", () => {
-	if(parseInt(window.innerWidth) >= 650) {
+	if(parseInt(window.innerWidth) >= 845) {
 		sidebar.style.translate = "100vw";
 		toggleBtn.style.display = "none";
 	}else {

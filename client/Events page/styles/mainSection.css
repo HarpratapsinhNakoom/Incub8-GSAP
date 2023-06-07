@@ -42,11 +42,12 @@
 #main-heading {
     position: relative;
     z-index: 2;
-    font-size: 55px;
-    font-weight: 700;
-    margin-bottom: 25px;
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 60px;
     color: aliceblue;
     /* color: #1e95d4; */
+    text-align: center;
 }
 
 #main-subheading {

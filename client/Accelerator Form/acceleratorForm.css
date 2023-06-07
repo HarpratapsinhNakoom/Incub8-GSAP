@@ -67,6 +67,7 @@ body {
     position: relative;
     z-index: 2;
     color: aliceblue;
+    margin-bottom: 100px;
 }
 .title__container > h2 {
     text-align: center;
@@ -86,12 +87,13 @@ body {
 
 
 .main_form__container {
-    margin-top: 50px;
+    max-width: 800px;
+    margin: 50px auto;
     padding: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 45px;
+    gap: 25px;
     flex-direction: column;
 }
 
@@ -106,7 +108,7 @@ body {
 }
 
 label {
-    font-size: 24px;
+    font-size: 18px;
     opacity: 70%;
     /* margin-bottom: 20px; */
     color: rgb(35, 24, 24);
@@ -123,7 +125,8 @@ input[type="email"],
 input[type="number"],
 textarea
 {
-    margin: 15px 0;
+    margin-top: 4px;
+    /* margin-bottom: 12px; */
     padding: 12px 17px;
     font-size: 20px;
     width: 100%;
@@ -133,10 +136,11 @@ textarea
 }
 
 textarea {
-    padding: 18px 8px 2px 8px;
+    padding: 8px 8px 2px 8px;
     border: 0.5px solid black;
     border-radius: 8px;
     resize: none;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 input:focus{
@@ -153,7 +157,7 @@ textarea:focus {
 
 .radio_container, .checkbox_container {
     display: flex;
-    gap: 50px;
+    gap: 20px;
 }
 
 .checkbox_container > div,
@@ -209,4 +213,26 @@ textarea:focus {
     .radio_container  {
         flex-direction: column;
     }
+}
+
+.submit__button {
+    margin-top: 25px;
+}
+
+.submit__button > a{
+
+    font-size: 22px;
+    background-color: #4A2199;
+    padding: 12px 30px;
+    color: white;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border: 2px solid transparent;
+}
+
+.submit__button > a:hover {
+    background-color: white;
+    color: #4A2199;
+    border: 2px solid #4A2199;
 }
