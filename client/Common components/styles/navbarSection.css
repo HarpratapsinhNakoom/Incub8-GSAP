@@ -197,6 +197,7 @@
     }
     #navbar-toggle-container {
         display: block;
+        margin-right: 30px;
     }
     #navbar-links {
         display: none;
@@ -205,13 +206,19 @@
 
 @media screen and (max-width : 500px) {
     #navbar {
-        padding: 0 25px;
+        padding: 0 12px;
+    }
+    #nabnar-toggle-container {
+        margin-right: 0;
     }
 }
 
 @media screen and (max-width : 450px) {
     .sidebar-link-item {
         font-size: 40px;
+    }
+    #navbar-logo {
+        padding-left: 0;
     }
 }
 
