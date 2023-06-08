@@ -88,13 +88,22 @@ body {
 
 .main_form__container {
     max-width: 800px;
-    margin: 50px auto;
-    padding: 30px;
+    height: fit-content;
+    margin: 20px auto;
+    padding-top: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 25px;
     flex-direction: column;
+    height: 100vh;
+}
+
+
+.main_form__container > iframe {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 .main_form__container > div {

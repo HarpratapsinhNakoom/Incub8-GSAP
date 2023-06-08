@@ -20,7 +20,7 @@ body {
     /* background-image: url("../assets/home-gradient-bg.avif");
     background-repeat: repeat-y;
     background-size: cover;     */
-    background-color: rgb(246, 244, 240);
+    background-color: #121212;
     /* background-color: white; */
 }
 
@@ -228,6 +228,7 @@ nav ul li a:hover::after {
     max-width: 600px;
 }
 .title > p {
+    text-align: justify;
     max-width: 600px;
     font-size: 15px;
     font-weight: normal;
