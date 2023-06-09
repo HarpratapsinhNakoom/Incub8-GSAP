@@ -224,7 +224,7 @@ textarea:focus {
 
 input:focus + label,
 input.has-value + label {
-    font-size: 16px;
+    font-size: 14px;
     bottom: 80%;
 }
 

@@ -78,45 +78,49 @@ body {
 }
 
 .coworking__gallery {
+    margin:0 auto;
+    margin-top: 50px;
+    width:90%;
+    overflow:hidden;
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    margin:0 24px;
-    margin-top: 100px;
-    row-gap: 60px;
-    column-gap: 40px;
 }
 
 .gallery__item {
-    max-width: 500px;
-    object-fit: contain;
+    overflow:hidden;
+    animation-name:fade;
+    animation-duration:1.4s;
+    animation-timing-function: ease;
+    display:none;
+    padding: 40px;
 }
 
-.item__image {
-    width: 100%;
+@keyframes fade{
+    from{
+      opacity:0.1;
+    }
+    to{
+      opacity:1;
+    }
 }
 
-.item__image > img {
-    width: 100%;
+.gallery__item > img{
+    width:100%;
+    max-width: 700px;
+    border-radius: 12px;
+    height: 100%;
+    -webkit-box-shadow: 0px 0px 24px -4px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 24px -4px rgba(0,0,0,1);
+    box-shadow: 0px 0px 24px -4px rgba(0,0,0,1);
 }
 
-.item__desc {
-    margin-top: 12px;
-}
-
-.item__desc > h2 {
-    font-size: 32px;
-    font-weight:500;
-    color: #1d1d1f;
-}
 
 .coworking__form {
     margin: 50px 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 70px;
     height: fit-content;
     height: 100vh;
 }

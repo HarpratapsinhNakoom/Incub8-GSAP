@@ -190,7 +190,7 @@
     width: 100%;
 }
 
-@media screen and (max-width : 845px) {
+@media screen and (max-width : 870px) {
     #navbar-content {
         align-items: center;
         justify-content: var(--justify_content);
