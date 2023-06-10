@@ -14,10 +14,6 @@ body {
     padding: 0;
     overflow-x: hidden;
     font-family: 'Source Sans Pro', sans-serif;
-    /* background-image: url("../assets/home-gradient-bg.avif");
-    background-repeat: repeat-y;
-    background-size: cover;     */
-    /* background-color: rgb(246, 244, 240); */
 }
 
 /* HEADING SECTION */
@@ -35,7 +31,6 @@ body {
 }
 
 .contact__title {
-    /* border: 1px solid black; */
     position: relative;
     display: flex;
     align-items: center;
@@ -60,6 +55,7 @@ body {
     height: auto;
     /* height: 100%; */
     filter: brightness(50%);
+    transform: translateY(-25%);
     /* filter: grayscale(100%); */
 }
 
@@ -117,7 +113,13 @@ body {
 
     border-radius: inherit;
 
-    background-color: #3E1F92;
+    /* background-color: #3E1F92; */
+    background-image: url("./assets/contact-bg.png");
+
+    /* background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+
     color: whitesmoke;
 
     display: flex;
@@ -132,7 +134,7 @@ body {
 }
 
 .main__title > p {
-    opacity: 80%;
+    font-size: 20px;
 }
 
 /* .main__middle {
@@ -155,9 +157,15 @@ body {
     cursor: pointer;
 }
 
-
+.main__socials {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
 .main__socials > a {
-    margin-right: 60px;
+    /* margin-right: 60px; */
     text-decoration: none;
 }
 
@@ -183,7 +191,7 @@ input + label {
     position: absolute;
     bottom: 10px;
     left: 10px;
-    font-size: 22px;
+    font-size: 16px;
     opacity: 70%;
 
     transition: all 0.4s ease;
@@ -193,7 +201,7 @@ textarea + label {
     position: absolute;
     top: -14px;
     left: 10px;
-    font-size: 22px;
+    font-size: 16px;
     color: rgba(0, 0, 0, 0.7);
     /* opacity: 70%; */
     background-color: white;
@@ -205,7 +213,7 @@ input[type="email"],
 textarea
 {
     padding: 18px 8px 2px 8px;
-    font-size: 18px;
+    font-size: 16px;
     width: 100%;
     border: none;
     border-bottom: 0.5px solid black;
@@ -231,14 +239,14 @@ textarea:focus {
 
 input:focus + label,
 input.has-value + label {
-    font-size: 14px;
+    font-size: 12px;
     bottom: 80%;
 }
 
 .main__form > button {
     /* max-width: 150px; */
     width: fit-content;
-    padding: 15px;
+    padding: 15px 25px;
     border: none;
     background-color: #3E1F92;
     color: whitesmoke;

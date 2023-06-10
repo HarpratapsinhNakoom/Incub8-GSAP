@@ -65,17 +65,24 @@ body {
 
 .coworking__title > section {
     z-index: 2;
-    color: whitesmoke;
+    color: white;
+}
+
+.coworking__title > section > p {
+    font-size: 25px;
 }
 
 .coworking__title > section > h2 {
-    font-size: 35px;
+    font-size: 55px;
     text-align: center;
 }
 
 @media screen and (width <= 700px) {
+    .coworking__title > section > p {
+        font-size: 20px;
+    }
     .coworking__title > section > h2 {
-        font-size: 24px;
+        font-size: 35px;
     }
 }
 

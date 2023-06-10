@@ -1,76 +1,8 @@
-/* .features-section__container {
-    width: 100%;
-    height: 100%;
-}
-
-.features__horizontal {
-    overflow-x: hidden;
-    width: fit-content;
-    height: fit-content;
-    display: flex;
-    flex-wrap: nowrap; */
-    /* transform: translate(-300vw); */
-/* } */
-
-/* .feature__item {
-    border: 10px solid aliceblue;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
-    color: aliceblue;
-} */
-
-
-/* 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;400;700&display=swap');
-
-body {
-    margin: 0;
-    height: 100vh;
-    font-family: 'Poppins';
-}
-.wrapper {
-    overflow-x: hidden;
-    position: relative;
-}
-* {
-    box-sizing: border-box;
-}
-
-svg {
-    position: absolute;
-    top: 12em;
-    left: 10vw;
-    width: 50vw;
-
-
-}
-
-svg > .mask {
-    width: 0;
-}
-
-.container {
-    display: flex;
-    width: 300vw;
-} */
 
 .features-section__container  {
-    /* display: flex;
-    align-items: center; */
-    /* justify-content: center; */
-    /* padding-bottom: 150px; */
     position: relative;
-    /* padding-top: 50px;
-    padding-bottom: 230px; */
     padding: 65px 0;
     background-color: black;
-    /* background-image: url("../../Common components/assets/footer-bg.png");
-    background-position: bottom;
-    background-size: cover;
-    background-repeat: no-repeat; */
 }
 
 .about-bg-container {
@@ -85,8 +17,6 @@ svg > .mask {
     height: 100%;
 }
 .features-section__container > div {
-    /* max-width: 800px; */
-    /* background-color: #FCFCFE; */
     overflow-x: hidden;
 }
 
@@ -99,20 +29,9 @@ svg > .mask {
 
 .feature__items {
     max-width: 800px;
-    /* margin: 0 auto; */
     display: flex;
-    /* align-items: center; */
-    /* position: relative; */
     animation: feature_slider 20s linear infinite;
     gap: 50px;
-    /* justify-content: space-evenly; */
-    /* flex-direction: column; */
-    /* gap: 150px; */
-    /* overflow-x: scroll; */
-    /* gap: 40px; */
-    /* translate: -700%; */
-    /* transition: all 2s ease; */
-    /* translate: -400px; */
 }
 
 @keyframes feature_slider {
