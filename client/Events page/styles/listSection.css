@@ -1,3 +1,15 @@
+.events__selector {
+    display: flex;
+    width: 100%;
+    padding: 40px;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.events__selector > p {
+    font-size: 32px;
+}
 .events-list {
     margin: 20px 45px;
     margin-top: 60px;

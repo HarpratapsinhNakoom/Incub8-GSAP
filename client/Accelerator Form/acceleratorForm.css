@@ -14,16 +14,12 @@ body {
     padding: 0;
     overflow-x: hidden;
     font-family: 'Source Sans Pro', sans-serif;
-    /* background-image: url("../assets/home-gradient-bg.avif");
-    background-repeat: repeat-y;
-    background-size: cover;     */
-    /* background-color: rgb(246, 244, 240); */
 }
 
 .page__title {
     padding-top: 120px;
     width: 100vw;
-    height: 550px;
+    height: 350px;
     position: relative;
     display: flex;
     align-items: center;
@@ -50,18 +46,19 @@ body {
     /* transform: translate(0, -20%); */
 }
 
-@media screen and (width <= 950px) {
+@media screen and (width <= 500px) {
     .page__title > .video > video {
         height: 100%;
         width: auto;
     }
 }
 
-@media screen and (width <= 600px) {
+@media screen and (width <= 400px) {
     .page__title > .video > video {
-        transform: translate(-40%);
+        transform: translate(-20%);
     }
 }
+
 
 .title__container {
     position: relative;
@@ -74,6 +71,13 @@ body {
     font-size: 55px;
     margin-bottom: 8px;
 }
+
+@media screen and (width <= 700px) {
+    .title__container > h2 {
+        font-size: 24px;
+    }
+}
+
 
 .title__container > p {
     text-align: center;
@@ -88,14 +92,13 @@ body {
 
 .main_form__container {
     max-width: 800px;
-    height: fit-content;
     margin: 20px auto;
     padding-top: 70px;
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
     gap: 25px;
-    flex-direction: column;
+    flex-direction: column; */
     height: 100vh;
 }
 
