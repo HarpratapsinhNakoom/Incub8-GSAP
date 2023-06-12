@@ -7,7 +7,7 @@
     flex-direction: column;
     width: 100%;
     position: relative;
-    height: 550px;
+    height: 350px;
 }
 #events-main > .video {
     position: absolute;
@@ -24,21 +24,23 @@
     height: auto;
     /* height: 100%; */
     filter: brightness(50%);
+    transform: translateY(-10%);
     /* filter: grayscale(100%); */
 }
 
-@media screen and (width <= 950px) {
+@media screen and (width <= 600px) {
     #events-main > .video > video {
         height: 100%;
         width: auto;
     }
 }
 
-@media screen and (width <= 600px) {
+@media screen and (width <= 400px) {
     #events-main > .video > video {
-        transform: translate(-40%);
+        transform: translate(-20%);
     }
 }
+
 #main-heading {
     position: relative;
     z-index: 2;
@@ -48,6 +50,12 @@
     color: aliceblue;
     /* color: #1e95d4; */
     text-align: center;
+}
+
+@media screen and (width <= 600px) {
+    #main-heading {
+        font-size: 24px;
+    }
 }
 
 #main-subheading {
