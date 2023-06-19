@@ -140,7 +140,7 @@ nav ul li a:hover::after {
 .video > video {
     width: 100%;
     height: auto;
-    filter: brightness(70%);
+    filter: brightness(50%);
 
 }
 
