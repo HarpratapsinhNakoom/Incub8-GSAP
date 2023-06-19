@@ -1,6 +1,50 @@
+@media screen and (width <= 1000px) {
+    .listitem_left {
+        flex: 1.5;
+    }
+
+    .item_date_venue {
+        width: 100%;
+    }
+}
+
+@media screen and (width <= 800px) {
+    .listitem_left {
+        flex: 1;
+    }
+}
+
+@media screen and (width <= 800px) {
+    .events_listitem {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (width <= 450px) {
+    .listitem_right {
+        flex-direction: column;
+    }
+
+    .form_qrcode > img {
+        max-width: 180px;
+    }
+    .item_date_venue {
+        flex-direction: column;
+    }
+
+    .listitem_right > section {
+        transform: none;
+    }
+}
+
 @media screen and (max-width : 550px) {
-    #events-list {
+    .events_list {
         padding: 0 20px;
+        margin-left : 0;
+        margin-right : 0;
     }
 }
 
