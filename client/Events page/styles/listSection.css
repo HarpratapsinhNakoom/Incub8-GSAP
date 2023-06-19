@@ -50,23 +50,27 @@
 }
 
 .item_subheading {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 22px;
 }
 
+.item_subheading > span {
+    font-size: 15px;
+    /* padding: 0 5px; */
+}
+
 .item_subheading > a {
-    color: #2d2d2d;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
+    color: rgb(72, 183, 227);
+    font-size: 15px;
+    padding-left: 8px;
 }
 
 .item_subheading > a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .item_date_venue {
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     width: 70%;
     gap: 25px;
@@ -77,12 +81,14 @@
 }
 
 .item_date_venue > div > h3 {
-    font-size: 16px;
+    font-size: 15px;
+    display: inline-block;
 }
 
 .item_date_venue > div > p {
-    margin-top: 8px;
-    font-size: 13px;
+    display: inline-block;
+    /* margin-top: 8px; */
+    font-size: 15px;
     margin-bottom: 12px;
     line-height: 18px;
 }
@@ -93,7 +99,7 @@
 }
 
 .item_venue > a {
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .item_venue > a:hover {
