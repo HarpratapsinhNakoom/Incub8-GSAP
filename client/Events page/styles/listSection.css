@@ -85,7 +85,8 @@
     display: inline-block;
 }
 
-.item_date_venue > div > p {
+.item_date_venue > div > p,
+.item_date_venue > div > a {
     display: inline-block;
     /* margin-top: 8px; */
     font-size: 15px;

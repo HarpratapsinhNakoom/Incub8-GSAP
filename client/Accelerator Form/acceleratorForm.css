@@ -43,7 +43,7 @@ body {
     -webkit-filter: brightness(50%);
     filter: brightness(50%);
     /* filter: grayscale(100%); */
-    /* transform: translate(0, -20%); */
+    transform: translate(0, -10%);
 }
 
 @media screen and (width <= 500px) {
