@@ -4,8 +4,6 @@
 // 	});
 // });
 
-console.log("hereee");
-
 const toggleBtn = document.getElementById("navbar-icon");
 
 
@@ -21,7 +19,7 @@ toggleBtn.addEventListener("click", () => {
 })
 
 window.addEventListener("resize", () => {
-	if(parseInt(window.innerWidth) >= 870) {
+	if(parseInt(window.innerWidth) >= 845) {
 		sidebar.style.translate = "100vw";
 		toggleBtn.style.display = "none";
 	}else {

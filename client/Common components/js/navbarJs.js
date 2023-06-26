@@ -15,14 +15,19 @@ toggleBtn.addEventListener("click", () => {
 	}
 })
 
+console.log(parseInt(window.innerWidth));
 window.addEventListener("resize", () => {
+	console.log(parseInt(window.innerWidth));
 	if(parseInt(window.innerWidth) >= 845) {
+		console.log("if block of resize if");	
 		sidebar.style.translate = "100vw";
 		toggleBtn.style.display = "none";
-	}else {
-		sidebar.style.translate = "100vw";
-		toggleBtn.style.display = "block";
 	}
+	// else {
+	// 	console.log("else block of resize if");	
+	// 	sidebar.style.translate = "100vw";
+	// 	toggleBtn.style.display = "block";
+	// }
 })
 
 const sidebar_item = document.querySelectorAll(".sidebar-link-item");

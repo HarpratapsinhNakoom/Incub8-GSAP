@@ -142,7 +142,7 @@
     text-decoration: underline;
 }
 
-@media screen and (max-width : 870px) {
+@media screen and (max-width : 845px) {
     #navbar {
         display: flex;
     }
