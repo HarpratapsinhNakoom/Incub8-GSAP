@@ -27,21 +27,37 @@
     display: flex;
     align-items: start;
     justify-content: space-between;
-    gap: 40px;
+    gap: 20px;
 }
 
 .listitem_left {
-    flex: 2;
+    flex: 1;
+}
+
+.listitem_left > video {
+    width: 100%;
+}
+
+.listitem_left > embed {
+    width: 100%;
+    height: 700px;
 }
 .listitem_right {
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     flex: 1;
     gap: 20px;
 }
 
+.listitem_right_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* flex: 1; */
+    gap: 20px;
+}
 .item_heading {
     font-size: 32px;
     font-weight: 700;
@@ -117,12 +133,12 @@
     border-radius: 4px;
 }
 
-.listitem_right > section {
+.listitem_right_bottom > section {
     transform: rotate(-90deg);
     position: relative;
 }
 
-.listitem_right > section > span {
+.listitem_right_bottom > section > span {
     position: absolute;
     display: block;
     width: 50px;
@@ -131,10 +147,10 @@
     top: 50%;
 }
 
-.listitem_right > section > .line1 {
+.listitem_right_bottom > section > .line1 {
     left: -55px;
 }
-.listitem_right > section > .line2 {
+.listitem_right_bottom > section > .line2 {
     right: -55px;
 }
 .form_qrcode > p {
